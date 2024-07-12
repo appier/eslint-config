@@ -1,9 +1,13 @@
 {
   "name": "@appier/eslint-config",
   "version": "0.0.1",
-  "module": "index.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/appier/eslint-config.git"
+  },
   "type": "module",
   "main": "dist/eslint.config.js",
+  "module": "dist/eslint.config.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
