@@ -21,6 +21,6 @@ import { defineConfig } from '@appier/eslint-config'
 
 
 export default defineConfig({
-  //  your config
+  // extend the default by your config
 })
 ```
