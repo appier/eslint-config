@@ -84,7 +84,6 @@ const baseConfigs = tsEslint.config(
   {
     rules: {
       'react/jsx-sort-props': ERROR,
-      '@typescript-eslint/no-unsafe-assignment': OFF,
 
       'unicorn/prevent-abbreviations': OFF,
       'unicorn/filename-case': OFF,
