@@ -88,6 +88,7 @@ const baseConfigs = tsEslint.config(
       'unicorn/prevent-abbreviations': OFF,
       'unicorn/filename-case': OFF,
       'unicorn/no-null': OFF,
+      'unicorn/better-regex': OFF,
     },
   },
 
