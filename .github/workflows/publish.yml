@@ -2,7 +2,7 @@ name: publish
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   github_package:
@@ -15,6 +15,9 @@ jobs:
       - uses: oven-sh/setup-bun@v2
       - run: bun install
       - run: bun run build
-      - run: npm publish
+      - uses: actions/setup-node@v4
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        with:
+          registry-url: 'https://npm.pkg.github.com'
+      - run: npm publish
